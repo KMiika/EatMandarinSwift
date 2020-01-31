@@ -25,7 +25,7 @@ struct Pacman : Shape
       
       pacman_path.addArc( center: rectangle_center,
                           radius: 80,                          // radius of the arc
-         startAngle: Angle( radians: 0 * .pi ),
+        startAngle: Angle( radians: 0 * .pi ),
          endAngle: Angle( radians: 2 * .pi ),
          clockwise: false )                   // create a counterclockwise arc
       
@@ -48,8 +48,8 @@ struct Pacman2 : Shape
       
       pacman_path.addArc( center: rectangle_center,
                           radius: 80,                          // radius of the arc
-         startAngle: Angle( radians: 0 * .pi ),
-         endAngle: Angle( radians: 1.5 * .pi ),
+        startAngle: Angle( radians: 0 * .pi ),
+         endAngle: Angle( radians: 1.75 * .pi ),
          clockwise: false )                   // create a counterclockwise arc
       
       pacman_path.closeSubpath()
@@ -71,8 +71,8 @@ struct Pacman3 : Shape
       
       pacman_path.addArc( center: rectangle_center,
                           radius: 80,                          // radius of the arc
-         startAngle: Angle( radians: 0 * .pi ),
-         endAngle: Angle( radians: 1 * .pi ),
+        startAngle: Angle( radians: 0 * .pi ),
+        endAngle: Angle( radians: 1.5 * .pi ),
          clockwise: false )                   // create a counterclockwise arc
       
       pacman_path.closeSubpath()
@@ -95,6 +95,72 @@ struct Pacman4 : Shape
       pacman_path.addArc( center: rectangle_center,
                           radius: 80,                          // radius of the arc
          startAngle: Angle( radians: 0 * .pi ),
+         endAngle: Angle( radians: 1.25 * .pi ),
+         clockwise: false )                   // create a counterclockwise arc
+      
+      pacman_path.closeSubpath()
+      
+      return pacman_path
+   }
+}
+struct Pacman5 : Shape
+{
+   func path( in given_rectangle: CGRect ) -> Path
+   {
+      let rectangle_center = CGPoint( x: given_rectangle.origin.x + given_rectangle.size.width / 2,
+                                      y: given_rectangle.origin.y + given_rectangle.size.height / 2 )
+      
+      var pacman_path = Path()
+      
+      pacman_path.move( to: rectangle_center ) // start from center
+      
+      pacman_path.addArc( center: rectangle_center,
+                          radius: 80,                          // radius of the arc
+         startAngle: Angle( radians: 0 * .pi ),
+         endAngle: Angle( radians: 1 * .pi ),
+         clockwise: false )                   // create a counterclockwise arc
+      
+      pacman_path.closeSubpath()
+      
+      return pacman_path
+   }
+}
+struct Pacman6 : Shape
+{
+   func path( in given_rectangle: CGRect ) -> Path
+   {
+      let rectangle_center = CGPoint( x: given_rectangle.origin.x + given_rectangle.size.width / 2,
+                                      y: given_rectangle.origin.y + given_rectangle.size.height / 2 )
+      
+      var pacman_path = Path()
+      
+      pacman_path.move( to: rectangle_center ) // start from center
+      
+      pacman_path.addArc( center: rectangle_center,
+                          radius: 80,                          // radius of the arc
+         startAngle: Angle( radians: 0 * .pi ),
+         endAngle: Angle( radians: 0.75 * .pi ),
+         clockwise: false )                   // create a counterclockwise arc
+      
+      pacman_path.closeSubpath()
+      
+      return pacman_path
+   }
+}
+struct Pacman7 : Shape
+{
+   func path( in given_rectangle: CGRect ) -> Path
+   {
+      let rectangle_center = CGPoint( x: given_rectangle.origin.x + given_rectangle.size.width / 2,
+                                      y: given_rectangle.origin.y + given_rectangle.size.height / 2 )
+      
+      var pacman_path = Path()
+      
+      pacman_path.move( to: rectangle_center ) // start from center
+      
+      pacman_path.addArc( center: rectangle_center,
+                          radius: 80,                          // radius of the arc
+         startAngle: Angle( radians: 0 * .pi ),
          endAngle: Angle( radians: 0.5 * .pi ),
          clockwise: false )                   // create a counterclockwise arc
       
@@ -103,6 +169,99 @@ struct Pacman4 : Shape
       return pacman_path
    }
 }
+
+struct Pacman8 : Shape
+{
+   func path( in given_rectangle: CGRect ) -> Path
+   {
+      let rectangle_center = CGPoint( x: given_rectangle.origin.x + given_rectangle.size.width / 2,
+                                      y: given_rectangle.origin.y + given_rectangle.size.height / 2 )
+      
+      var pacman_path = Path()
+      
+      pacman_path.move( to: rectangle_center ) // start from center
+      
+      pacman_path.addArc( center: rectangle_center,
+                          radius: 80,                          // radius of the arc
+         startAngle: Angle( radians: 0 * .pi ),
+         endAngle: Angle( radians: 0.5 * .pi ),
+         clockwise: false )                   // create a counterclockwise arc
+      
+      pacman_path.closeSubpath()
+      
+      return pacman_path
+   }
+}
+
+struct Pacman9 : Shape
+{
+   func path( in given_rectangle: CGRect ) -> Path
+   {
+      let rectangle_center = CGPoint( x: given_rectangle.origin.x + given_rectangle.size.width / 2,
+                                      y: given_rectangle.origin.y + given_rectangle.size.height / 2 )
+      
+      var pacman_path = Path()
+      
+      pacman_path.move( to: rectangle_center ) // start from center
+      
+      pacman_path.addArc( center: rectangle_center,
+                          radius: 80,                          // radius of the arc
+         startAngle: Angle( radians: 0 * .pi ),
+         endAngle: Angle( radians: 0.25 * .pi ),
+         clockwise: false )                   // create a counterclockwise arc
+      
+      pacman_path.closeSubpath()
+      
+      return pacman_path
+   }
+}
+
+struct Pacman10 : Shape
+{
+   func path( in given_rectangle: CGRect ) -> Path
+   {
+      let rectangle_center = CGPoint( x: given_rectangle.origin.x + given_rectangle.size.width / 2,
+                                      y: given_rectangle.origin.y + given_rectangle.size.height / 2 )
+      
+      var pacman_path = Path()
+      
+      pacman_path.move( to: rectangle_center ) // start from center
+      
+      pacman_path.addArc( center: rectangle_center,
+                          radius: 80,                          // radius of the arc
+         startAngle: Angle( radians: 0 * .pi ),
+         endAngle: Angle( radians: 0 * .pi ),
+         clockwise: false )                   // create a counterclockwise arc
+      
+      pacman_path.closeSubpath()
+      
+      return pacman_path
+   }
+}
+
+struct Pacman11 : Shape
+{
+   func path( in given_rectangle: CGRect ) -> Path
+   {
+      let rectangle_center = CGPoint( x: given_rectangle.origin.x + given_rectangle.size.width / 2,
+                                      y: given_rectangle.origin.y + given_rectangle.size.height / 2 )
+      
+      var pacman_path = Path()
+      
+      pacman_path.move( to: rectangle_center ) // start from center
+      
+      pacman_path.addArc( center: rectangle_center,
+                          radius: 80,                          // radius of the arc
+         startAngle: Angle( radians: 0 * .pi ),
+         endAngle: Angle( radians: 2 * .pi ),
+         clockwise: false )                   // create a counterclockwise arc
+      
+      pacman_path.closeSubpath()
+      
+      return pacman_path
+   }
+}
+
 struct BallButtonStyle: ButtonStyle
 {
     func makeBody( configuration: Configuration) -> some View
@@ -117,71 +276,98 @@ struct BallButtonStyle: ButtonStyle
    // Buttons with equal widths were made by setting minWidth: 0, maxWidth: .infinity
 }
 
-struct MovementButtonStyle: ButtonStyle
-{
-    func makeBody( configuration: Configuration) -> some View
-    {
-      configuration.label
-         .frame( minWidth: 0, maxWidth: .infinity, minHeight: 44 )
-            .padding( .horizontal )
-            .foregroundColor( Color.white )
-            .background( RoundedRectangle( cornerRadius: 8 ).fill( Color.accentColor ) )
-    }
-   
-   // Buttons with equal widths were made by setting minWidth: 0, maxWidth: .infinity
-}
 
 
 struct MovingBallView : View
 {
    @State private var showingAlert = false
    @State var selected_shape_index = 0
-   @State var ball_filling_color = Color.green
-   @State var ball_offset = CGSize.zero
+   @State var dont_eat_state = 0
+   @State var text_to_modify = "Eat Orange!"
    
-   let possible_ball_colors = [ Color.green, Color.red, Color.yellow, Color.blue, Color.pink,
-                                Color.purple, Color.orange, Color.white ]
-   
+
+    
    var body : some View
    {
-      VStack
-      {
+      
+        VStack{
          // The backround color is the first layer in the ZStack
-         Color( red: 0.9, green: 0.9, blue: 0.9 ).edgesIgnoringSafeArea( .all ) // background color
-        
+         Color( red: 255, green: 255, blue: 255 ).edgesIgnoringSafeArea( .all ) // background color
+         Text( text_to_modify ).font( .largeTitle )
+            
+
         
            
          
          ZStack  // the layer for the ball
+        
          {
-            
-            
-            
             if selected_shape_index == 0 {
             Pacman().fill( Color.orange )
                   .frame( width: 200, height: 140 )
+            
             }
-            if selected_shape_index == 1{
-            Pacman().fill( Color.white )
-                .frame( width: 200, height: 140 )
+            else if selected_shape_index == 1{
+           
             Pacman2().fill( Color.orange )
                 .frame( width: 200, height: 140 )
+            
         
             }
-            if selected_shape_index == 2{
-            Pacman2().fill( Color.white )
-                .frame( width: 200, height: 140 )
+            else if selected_shape_index == 2{
+            
             Pacman3().fill( Color.orange )
                 .frame( width: 200, height: 140 )
             
             }
-            if selected_shape_index == 3{
-            Pacman3().fill( Color.white )
-                .frame( width: 200, height: 140 )
+            else if selected_shape_index == 3{
+            
             Pacman4().fill( Color.orange )
                 .frame( width: 200, height: 140 )
             
-                }
+            }
+            else if selected_shape_index == 4{
+            
+            Pacman5().fill( Color.orange )
+                .frame( width: 200, height: 140 )
+            
+            }
+            else if selected_shape_index == 5{
+           
+            Pacman6().fill( Color.orange )
+                .frame( width: 200, height: 140 )
+            
+            }
+            else if selected_shape_index == 6{
+          
+            Pacman7().fill( Color.orange )
+                .frame( width: 200, height: 140 )
+            
+            }
+            else if selected_shape_index == 7{
+     
+            Pacman8().fill( Color.orange )
+                .frame( width: 200, height: 140 )
+            
+            }
+            else if selected_shape_index == 8{
+      
+            Pacman9().fill( Color.orange )
+                .frame( width: 200, height: 140 )
+            
+            }
+            else if selected_shape_index == 9{
+         
+            Pacman10().fill( Color.orange )
+                .frame( width: 200, height: 140 )
+            
+            }
+            else if selected_shape_index == 36 {
+                Pacman11().fill( Color.green )
+                .frame( width: 200, height: 140 )
+                
+            }
+            
             
             
             
@@ -199,7 +385,16 @@ struct MovingBallView : View
                Button( action:
                {
                 
-                self.selected_shape_index += 1
+                self.dont_eat_state = 0
+                self.text_to_modify = "Eat Orange!"
+                
+                if self.selected_shape_index < 10{
+                    self.selected_shape_index += 1
+                }
+                else{
+                    self.selected_shape_index = 0
+                }
+                
                 
                 
 
@@ -214,25 +409,36 @@ struct MovingBallView : View
                
                Button( action:
                {
-                  self.ball_filling_color = self.possible_ball_colors.randomElement()!
-               } )
+                self.dont_eat_state += 1
+                
+                if self.dont_eat_state < 2{
+                 self.text_to_modify = "Are you sure?"
+                }
+                else {
+                    self.selected_shape_index = 36
+                    self.text_to_modify = "Orange is rotten. too bad"
+                }
+                
+                } )
                {
                   Text( "Don't eat orange" )
                }
-               .buttonStyle( BallButtonStyle() )
+                .buttonStyle(BallButtonStyle())
+                
+               
             }
-            .padding( EdgeInsets( top: 0, leading: 8, bottom: 0, trailing: 8 ) )
-
+            .padding( EdgeInsets( top: 0, leading: 8, bottom: 8, trailing: 8 ) )
+            
            
             }
+            
+            
          }
+    
       }
+    
    }
 
- 
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MovingBallView()
-    }
-}
+
+
